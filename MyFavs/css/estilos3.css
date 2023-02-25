@@ -21,30 +21,24 @@ main{
     padding-top: 85px
 }
 
-article{
-  background-color: rgba(12, 15, 46, 0.356);
+.container {
   text-align: center;
-  border-radius: 2cm;
-  height: 5.5cm;
+  margin: 50px auto;
+  max-width: 800px;
 }
 
-section{
-    background-color: rgba(12, 15, 46, 0.356);
-    text-align: center;
-    border-radius: 0.7cm;
-    height: max-content;
-    }
-
-section ol{
-    text-align: left;
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-section li{
-  font-size: 17px;
+p {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-p{
-    font-size: 17px;
+img {
+  max-width: 100%;
 }
 
 nav {
