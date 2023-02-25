@@ -1,32 +1,51 @@
 body{
     background: #536976;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to left, rgb(41, 46, 73), #536976);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 font-family: 'Cormorant Garamond', serif;
 
 }
-header{
-    background-color: rgba(12, 15, 46, 0.356);
-    text-align: center;
-    color: #ffffff;
-    border-radius: 4cm;
-    height: 4.5cm;
-    place-items: center;
-    display: grid;
+header {
+  background: #536976;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, rgb(41, 46, 73), #536976);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
 }
 
 main{
     color: #ffffff;
+    padding-top: 85px
 }
+
+article{
+  background-color: rgba(12, 15, 46, 0.356);
+  text-align: center;
+  border-radius: 2cm;
+  height: 5.5cm;
+}
+
 section{
     background-color: rgba(12, 15, 46, 0.356);
     text-align: center;
-    border-radius: 2cm;
-    height: 7cm;
+    border-radius: 0.7cm;
+    height: max-content;
     }
-p{
-    font-size: 16px;
+
+section ol{
+    text-align: left;
 }
+
+section li{
+  font-size: 17px;
+}
+
+p{
+    font-size: 17px;
+}
+
 nav {
     border-bottom: 3px solid #ddd;
   }
