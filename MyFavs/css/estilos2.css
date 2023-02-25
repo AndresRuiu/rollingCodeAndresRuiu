@@ -1,14 +1,14 @@
 body{
-    background: #536976;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, rgb(41, 46, 73), #536976);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 font-family: 'Cormorant Garamond', serif;
 
 }
 header {
-  background: #536976;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, rgb(41, 46, 73), #536976);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FF416C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -22,7 +22,8 @@ main{
 }
 
 article{
-  background-color: rgba(12, 15, 46, 0.356);
+  background-color: rgb(255, 255, 255);
+  color: #FF416C;
   text-align: center;
   border-radius: 2cm;
   height: 5.5cm;
