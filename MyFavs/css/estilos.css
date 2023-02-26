@@ -13,6 +13,7 @@ header{
     height: 4.5cm;
     place-items: center;
     display: grid;
+    margin: 50px;
 }
 
 main{

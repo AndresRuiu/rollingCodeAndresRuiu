@@ -13,7 +13,6 @@ background: linear-gradient(to left, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Fi
   position: fixed;
   z-index: 100;
   text-align: center;
-  
 }
 
 main{
@@ -21,26 +20,31 @@ main{
     padding-top: 115px
 }
 
-article{
+section article{
   background-color: rgb(255, 255, 255);
   color: #FF416C;
   text-align: center;
   border-radius: 2cm;
-  height: 5.5cm;
+  height: auto;
+  margin: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-section{
+section .lista {
     background-color: rgba(12, 15, 46, 0.356);
     text-align: center;
     border-radius: 0.7cm;
-    height: max-content;
+    padding-top: 5px;
+    border-style: solid;
     }
 
-section ol{
+
+section .lista ol{
     text-align: left;
 }
 
-section li{
+section .lista li{
   font-size: 17px;
 }
 
