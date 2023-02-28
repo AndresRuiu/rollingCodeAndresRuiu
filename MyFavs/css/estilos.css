@@ -13,18 +13,20 @@ header{
     height: 4.5cm;
     place-items: center;
     display: grid;
-    margin: 50px;
+    margin: 40px;
 }
 
 main{
     color: #ffffff;
+    padding-top: 30px;
 }
 section{
     background-color: rgb(255, 255, 255);
     color: #FF416C;
     text-align: center;
     border-radius: 2cm;
-    height: 7cm;
+    height: 8cm;
+    padding-top: 5px;
     }
 p{
     font-size: 16px;
