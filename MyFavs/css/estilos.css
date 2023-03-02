@@ -16,18 +16,7 @@ header{
     margin: 40px;
 }
 
-main{
-    color: #ffffff;
-    padding-top: 30px;
-}
-section{
-    background-color: rgb(255, 255, 255);
-    color: #FF416C;
-    text-align: center;
-    border-radius: 2cm;
-    height: 8cm;
-    padding-top: 5px;
-    }
+
 p{
     font-size: 16px;
 }
@@ -56,6 +45,54 @@ nav {
     letter-spacing: 1px;
   }
   
+  aside {
+    float: left;
+    width: 20%;
+    padding-top: 25px;
+    padding-left: 1%;
+  }
+
+  aside a{
+    color: #FF416C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  table {
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-spacing: 25px;
+  }
+  table th{
+    color: #FF4B2B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  main{
+      color: #ffffff;
+      padding-top: 30px;
+      margin-left: 22%;
+      margin-right: 3%;
+  }
+  
+  section #contenedor{
+    background-color: rgb(255, 255, 255);
+    color: #FF416C;
+    border-radius: 2cm;
+    display: flex;
+    width: auto;
+    height: 9cm;
+    justify-items: center;
+      }
+    
+    section #contenido{
+      text-align: center;
+    }
+
   footer{
     color: #ffffff;
   }
