@@ -1,0 +1,188 @@
+
+body{
+    background-image: var(--color-fondo);
+    margin: 3px;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5cm;
+    width: 800px;
+    height: 230px;
+}
+
+main{
+    display: flex;
+}
+:root{
+    --color-fondo: radial-gradient(circle, #e1a251, #db9a52, #d49352, #cd8c53, #c68553, #c37d4e, #c1754a, #be6d46, #c0613e, #c15337, #c34433, #c43030);
+    --color-contenedores: radial-gradient(circle, hwb(0 19% 23% / 0.3), #c34433c0, #c1533781, #c0613ea1, #be6e4675, #c1764ac0, #c37d4e3d, hsla(26, 50%, 55%, 0.363), hsla(28, 55%, 56%, 0.3), hwb(30 32% 17% / 0.3), hsla(32, 66%, 59%, 0.3), hsla(34, 71%, 60%, 0.3));
+}
+
+.titulo{
+    height: 110px;
+}
+
+h1{
+    font-size: 50px;
+    animation-name: zoomInUp;
+    animation-duration: 1.5s;
+}
+.descripcion{
+    height: 60px;
+    align-items: center;
+    background-color: rgba(209, 142, 98, 0.377);
+    width: 62%;
+    border-radius: 5cm;
+    margin-bottom: 10px;
+    height: auto;
+    animation-name: lightSpeedInLeft;
+    animation-duration: 2s;
+}
+
+a{
+    color: rgb(240, 215, 182);
+    text-decoration: none;
+}
+
+
+.contenedor1, .contenedor2{
+    background-image: var(--color-contenedores);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 4cm;
+    border: #be6e4675 solid 2px;
+    
+}
+
+.contenedor1{
+    width: 800px;
+}
+
+.contenedor2{
+    width: 350px;
+}
+.subtitulo1, .subtitulo2{
+    
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5cm;
+    
+    
+}
+.subtitulo1{
+    width: 20%;
+}
+
+.subtitulo1 h2{
+    font-size: 40px;
+    animation-name: lightSpeedInLeft;
+    animation-duration: 2s;
+}
+
+.subtitulo2{
+    width: 40%;
+}
+
+.subtitulo2 h2{
+    font-size: 35px;
+    animation-name: lightSpeedInRight;
+    animation-duration: 2s;
+
+}
+.subtitulo1, .subtitulo2, header{
+    animation-name: fondo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.listaC{
+    color: white;
+    margin: 0px;
+    transform: translate(-20px);
+    height: 450px;
+    
+}
+
+.listaP{
+    color: white;
+    margin: 0px;
+    transform: translate(-20px);
+}
+
+ul{
+    list-style: none;
+}
+
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2cm;
+    
+}
+
+.caja{
+    margin: 40px;
+    width: 150px;
+    height: 50px;
+    animation-name: aumentar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.caja:hover{
+    animation-play-state: paused;
+    animation: tada;
+    animation-duration: 1s;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 1cm;
+    font-weight: bolder;
+    border: #c34433 solid 1px;
+    
+}
+
+@keyframes fondo{
+    from{
+        
+        background-color: rgba(221, 57, 57, 0.205);
+    }
+
+    to{
+        background-color:  #d37d44b6;
+    }
+}
+
+@keyframes aumentar {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
