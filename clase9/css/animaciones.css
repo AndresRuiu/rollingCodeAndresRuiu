@@ -1,0 +1,53 @@
+ul{
+    list-style-type: none;
+    
+ }
+ 
+ a{
+    text-decoration: none;
+    padding: 10px;
+ 
+    background-color: rgba(0, 0, 255, 0.278);
+ }
+ @keyframes miAnimacion {
+    from{
+       top: var(--posi-inicial);
+       background-color: blueviolet;
+    }
+    to{
+       top: 0px;
+       background-color: var(--my-colorFondo);
+    }
+ }
+ img{
+    width: 25%;
+ }
+ img:hover{
+    animation-name: imgs;
+    animation-duration: 3s;
+ }
+ section{
+    display: flex;
+    justify-content: center;
+ }
+ @keyframes  imgs{
+    from{
+       width: 35%;
+    }
+    to{
+       width: 25%;
+    }
+ }
+ /*Definimos la variable  */
+ :root{
+    --my-colorFondo:rgba(255, 0, 0, 0.349);
+    --posi-inicial:1000px;
+ }
+ h1{
+    position: relative;
+    width: 20%;
+    animation-name: miAnimacion;
+    animation-duration: 10s; 
+    /* Usamos la variable */
+    background-color: var(--my-colorFondo);
+ }

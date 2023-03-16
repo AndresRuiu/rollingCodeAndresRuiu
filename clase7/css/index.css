@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    background-color: rgba(161, 87, 18, 0.788);
+}
+
+h1{
+    border: 3px solid white;
+    background: rgba(160, 71, 12, 0.712);
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.h2{
+    border: #461f0d 8px ridge;
+    width: max-content;
+    margin-left: 132px;
+    background: rgba(160, 71, 12, 0.712);
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.cuadro{
+    width: 100px;
+    height: 100px;
+}
+
+#uno{
+    background-color: rgba(165, 42, 42, 0.644);
+    position: absolute;
+    top: 497px;
+    border-top-right-radius: 35px;
+}
+
+#dos{
+    background-color: rgba(0, 0, 255, 0.603);
+    position: absolute;
+    left: 1104px;
+    border-bottom-left-radius: 35px;
+}
+
+#tres{
+    background-color: rgba(0, 128, 0, 0.568);
+    position: absolute;
+    border-bottom-right-radius: 35px;
+}
+
+#cuatro{
+    background-color: #ffc74e;
+    position: absolute;
+    left: 1104px;
+    top: 497px;
+    border-top-left-radius: 35px;
+}
+
+#circulo{
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    border-radius: 50px;
+}
+
+#triangulo{
+    width: 0px;
+    height: 0px;
+    border-bottom: 80px solid black;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    position: absolute;
+    left: 85%;
+    top: 45%;
+}
+
+#cocina{
+    width: 90%;
+    max-width: 650px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-47%);
+    background-image: url(../img/wooden-board-empty-table-top-blurred-background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 60px 70px;
+    border: #461f0d 15px;
+    border-style: ridge;
+    
+}
+
+.hamburguesa {
+    width: 250px;
+    height: 175px;
+    position: relative;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transform: translate(94px,100px);
+    
+}
+
+.pan-superior,
+.pan-inferior {
+  display: block;
+  width: 100%;
+  background-image: url(../img/fondo-de-la-hamburguesa-19390593.jpg);
+    background-position: center;
+    background-size: cover;
+  position: absolute;
+  left: 0;
+  
+  
+}
+
+.pan-superior {
+    top: 0;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 50px;
+}
+
+.pan-inferior {
+    bottom: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 35px;
+}
+
+.lechuga{
+    display: block;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 34%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    background-image: url(../img/textura-verde-de-la-lechuga-de-hoja-54906124.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carne1,.carne2{
+    background-image: url(../img/images\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carne1{
+    display: block;
+    width: 90%;
+    height: 23px;
+    background-color: #461f0d;
+    position: absolute;
+    left: 5%;
+    top: 59%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+  }
+
+.carne2{
+    display: block;
+    width: 90%;
+    height: 23px;
+    background-color: #461f0d;
+    position: absolute;
+    left: 5%;
+    top: 75%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+  }
+
+.queso1,.queso2{
+    background-image: url(../img/images\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+.queso1{
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 51%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+
+}
+
+.queso2{
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 66%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+
+}
+
+.tomates{
+    display: inline;
+}
+.tomate1,.tomate2{
+    background-image: url(../img/57979013-fondo-o-textura-horizontal-del-marco-del-tomate-rojo-ciérrese-para-arriba-de-la-sección-cruzada.jpg);
+    background-position: center;
+    background-size: cover;
+    top: 44%;
+}
+.tomate1{
+    display: block;
+    width: 45%;
+    height: 18px;
+    background-color: #aa1313;
+    position: absolute;
+    left: 5%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    border: #000 solid 1px;
+}
+
+.tomate2{
+    display: block;
+    width: 45%;
+    height: 18px;
+    background-color: #aa1313;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    border: #000 solid 1px;
+}
+
+.plato {
+    width: 330px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid rgb(46, 46, 46);
+    background-color: white;
+    position: absolute;
+    transform: translate(46px,250px);
+  }
+  
+
+.lat-container {
+    width: 15%;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../img/bebida-energetica-vista-frontal-lata-bebida-ligera-alcohol-color.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    transform: translate(450px,-185px);
+  }
+  
+  .lat-arriba {
+    width: 94%;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(../img/refrescante-lata-refresco-frio-gotas-agua.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    border: #000 solid 4px;
+  }
+  
+  .lat-cuerpo {
+    width: 100%;
+    height: 215px;
+    background-image: url(../img/bebida-energetica-vista-frontal-lata-bebida-ligera-alcohol-color.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+  }
+  
+  .lat-abajo {
+    width: 97%;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../img/bebida-energetica-vista-frontal-lata-bebida-ligera-alcohol-color.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(210px);
+    border: #000 solid 2px;
+  }
+  
