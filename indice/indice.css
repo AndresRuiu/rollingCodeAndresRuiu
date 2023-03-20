@@ -52,7 +52,7 @@ h1{
     animation-duration: 2s;
 }
 
-a{
+.descripcion a{
     color: rgb(240, 215, 182);
     text-decoration: none;
 }
@@ -156,6 +156,11 @@ ul{
     animation-play-state: paused;
     animation: tada;
     animation-duration: 1s;
+}
+
+.caja a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 button{

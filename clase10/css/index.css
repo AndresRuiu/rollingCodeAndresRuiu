@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 5px;
+}
+
+body{
+    background-image: url(../img/pexels-eberhard-grossgasteiger-1612351.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+article{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    margin: 10px;
+}
+
+@media (max-width:768px){
+    section{
+        display: block;
+    }
+    article{
+        width: 95%;
+    }
+}
+
+@media (max-width:420px){
+    section{
+        display: block;
+    }
+    article{
+        width: 95%;
+    }
+}

@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+:root{
+    --color-azul: #2f78e2
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75px;
+    border-bottom: rgb(204, 199, 199) solid 1px;
+}
+
+.logo, nav{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    width: 65%;
+}
+
+.logo img{
+    height: 60%;
+}
+
+nav{
+    width: 35%;
+    justify-content: space-around;
+    padding-right: 25px;
+}
+
+button{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+#boton1{
+    color: var(--color-azul);
+    background-color: transparent;
+    border: transparent;
+    border-radius: 3px;
+}
+
+#boton1:hover{
+    background-color: #2f77e21f;
+    cursor: pointer;
+}
+
+#boton2{
+    color: white;
+    background-color: var(--color-azul);
+    border: none;
+    border-radius: 3px;
+}
+
+#boton2:hover{
+    background-color: #205bb3;
+    cursor: pointer;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 510px;
+}
+
+.tituloC{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 3.5s;
+}
+
+.titulo1 h1{
+    font-size: 50px;
+    font-weight: 500;
+    animation-name: fadeIn;
+    animation-duration: 3.5s;
+}
+
+.semicirculos{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: aparecer;
+    animation-duration: 0.1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+#cir1{
+    background-color: red;
+    top: 460px;
+    left: 620px;
+    width: 100px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    animation:fadeInUp;
+    animation-duration: 4s;
+}
+
+
+#cir2{
+    background-color: var(--color-azul);
+    left: 470px;
+    width: 100px;
+    height: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    animation-name:fadeInDown;
+    animation-duration: 4s;
+}
+
+#cir3{
+    background-color: rgb(2, 143, 2);
+    left: 810px;
+    top: 50px;
+    width: 40px;
+    height: 80px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    position: absolute;
+    animation-name:fadeInTopRight;
+    animation-duration: 4s;
+}
+
+#cir4{
+    background-color: yellow;
+    left: 365px;
+    top: 400px;
+    width: 40px;
+    height: 80px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    animation-name:fadeInBottomLeft;
+    animation-duration: 4s;
+}
+
+#cir5{
+    background-color: var(--color-azul);
+    top: 350px;
+    left: 20px;
+    width: 60px;
+    height: 120px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    position: absolute;
+    animation-name:fadeInBottomLeft;
+    animation-duration: 4s;
+}
+
+#cir6{
+    background-color: red;
+    left: 1100px;
+    top: 20px;
+    width: 60px;
+    height: 120px;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    position: absolute;
+    animation-name:fadeInTopRight;
+    animation-duration: 4s;
+}
+
+.fotos{
+    opacity: 0;
+    animation: aparecer;
+    animation-duration: 0.1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fotos,.foto{
+    position: absolute;
+}
+
+.foto{
+    width: 20%;
+    height: 120px;
+}
+
+#fot1{
+    left: 850px;
+}
+.contenedor #fot1 img{
+    height: 160%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation-name:fadeInTopRight;
+    animation-duration: 4s;
+}
+
+#fot2{
+    top:220px;
+    left:980px;
+}
+
+.contenedor #fot2 img{
+    height: 150%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation-name:fadeInRight;
+    animation-duration: 4s;
+}
+#fot3{
+    top:300px;
+    left: 110px;
+}
+.contenedor #fot3 img{
+    height: 180%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    animation-name:fadeInBottomLeft;
+    animation-duration: 4s;
+}
+
+#fot4{
+    top:0px;
+    left:300px;
+}
+.contenedor #fot4 img{
+    height: 110%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation-name:fadeInTopLeft;
+    animation-duration: 4s;
+}
+
+#fot5{
+    top:50px;
+    
+}
+.contenedor #fot5 img{
+    height: 180%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    animation-name:fadeInTopLeft;
+    animation-duration: 4s;
+}
+.contenedor #fot6 img{
+    height: 180%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    animation-name:fadeInBottomRight;
+    animation-duration: 4s;
+}
+
+#fot6{
+    left: 750px;
+    top: 300px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+img,#cir1,#cir2,#cir3,#cir4,#cir5,#cir6{
+    animation-delay: 2s;
+}
