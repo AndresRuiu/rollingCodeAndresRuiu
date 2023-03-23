@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Clases de Bootstrap</title>
+</head>
+<body>
+    <!--Comienzo navbar-->
+    <nav class="navbar navbar-expand-lg  bg-clean">
+        <div class="container-fluid ">
+          <a class="navbar-brand text-naranja" href="#">Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-naranja-50" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Clases
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#acordeon1">Sistema de Grilla</a></li>
+                  <li><a class="dropdown-item" href="#acordeon2">Tipografía</a></li>
+                  <li><a class="dropdown-item" href="#acordeon3">Componentes</a></li>
+                  <li><a class="dropdown-item" href="#acordeon4">Utilidades de estilo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#redes">Redes Sociales</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+          </div>
+        </div>
+     </nav>
+
+      <!--fin navbar-->
+
+      <!--Comienzo titulo y subtitulo-->
+
+      <div class="intro">
+        <div class="titulo w-75 mx-auto mb-3"><h1 class="text-center">Bootstrap: Guía de Clases</h1></div>
+        <div class="subtitulo w-50 mx-auto p-3"><h4 class="text-center">Bootstrap es un framework de diseño web que proporciona una serie de clases CSS y componentes predefinidos para ayudar a los desarrolladores a crear interfaces de usuario responsivas y con un aspecto coherente</h4></div>
+      </div>
+
+      <!--fin titulo y subtitulo-->
+
+      <div class="preAcor w-75 ">
+        <h4 class="comienzo ">Algunas de las principales clases que se utilizan en Bootstrap son:</h4>
+      </div>
+
+      <!--Comienzo el primer acordeon-->
+
+      <div class="accordion mx-auto" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" id="acordeon1">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <h5 class="text-naranja">Sistema de Grilla</h5>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body m-3">
+              <strong>Bootstrap utiliza un sistema de cuadrícula para ayudar a los desarrolladores a crear diseños de página responsivos.</strong> Las clases relacionadas con la cuadrícula pueden ser:
+              <div class="lista">
+                <ol>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">Container class:</strong><p class="text-dark">La clase "container" se utiliza para contener todo el contenido de la página y para aplicar márgenes laterales automáticos que centrarán el contenido en la página.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">Row class:</strong><p class="text-dark">La clase "row" se utiliza para crear una fila de columnas. Dentro de una fila, cada columna se divide en 12 partes iguales.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">Column classes:</strong><p class="text-dark">Las clases de columna, como "col-md-6" o "col-lg-4", se utilizan para definir el ancho de una columna en función del ancho de la pantalla. El número después de "col-" define cuántas partes de las 12 totales de la fila ocupa la columna. El prefijo "md" o "lg" se refiere a los puntos de ruptura de la pantalla en los que se aplicará el ancho de la columna.</p> 
+                        <span onmouseover="mostrarAlerta()" onmouseout="ocultarAlerta()" class="alerta ">¡Dato de color!</span>
+                        <div class="alert alert-danger  d-none" role="alert">
+                            <div class="texto">
+                                <p>Los prefijos usados son los siguientes:</p>
+                                <ul>
+                                    <li><strong>xs:</strong> Este prefijo se utiliza para definir el ancho de las columnas en pantallas extra pequeñas. El ancho por defecto de las columnas en este tipo de pantallas es el 100% de la anchura del contenedor padre, por lo que no se requiere el uso de esta clase en estos casos.</li>
+                                    <li><strong>sm:</strong> Este prefijo se utiliza para definir el ancho de las columnas en pantallas pequeñas. El ancho por defecto de las columnas en este tipo de pantallas es el 100% de la anchura del contenedor padre, por lo que no se requiere el uso de esta clase en estos casos.</li>
+                                    <li><strong>md:</strong> Este prefijo se utiliza para definir el ancho de las columnas en pantallas medianas. En Bootstrap, se consideran pantallas medianas aquellas con un ancho mínimo de 768 píxeles.</li>
+                                    <li><strong>lg:</strong> Este prefijo se utiliza para definir el ancho de las columnas en pantallas grandes. En Bootstrap, se consideran pantallas grandes aquellas con un ancho mínimo de 992 píxeles.</li>
+                                    <li><strong>xl:</strong> Este prefijo se utiliza para definir el ancho de las columnas en pantallas extra grandes. En Bootstrap, se consideran pantallas extra grandes aquellas con un ancho mínimo de 1200 píxeles.</li>
+                                </ul>
+                            </div>
+                            <img src="./img/FrbPEh-WcAENt9N.jpg" alt="">
+                          </div>                          
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">Offset classes:</strong><p class="text-dark">Las clases de desplazamiento, como "offset-md-2" o "offset-lg-3", se utilizan para agregar un margen izquierdo a una columna y crear espacios en blanco entre las columnas. El número después de "offset-" define cuántas partes de las 12 totales de la fila se desplaza la columna hacia la derecha.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">Nesting columns:</strong><p class="text-dark">Las columnas también se pueden anidar dentro de otras columnas utilizando las clases "row" y "col". Esto es útil para crear diseños más complejos.</p>
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">Reordering columns:</strong><p class="text-dark">Bootstrap también proporciona clases de reordenamiento, como "order-first" o "order-last", para cambiar el orden de las columnas en función del ancho de la pantalla.</p> 
+                    </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Comienzo el segundo acordeon-->
+
+        <div class="accordion-item" id="acordeon2">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <h5 class="text-naranja">Tipografía</h5>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Bootstrap proporciona una serie de clases CSS para ayudar a personalizar la apariencia del texto en una página web.</strong> Estas clases incluyen:
+              <div class="lista">
+                <ol>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.h1 a .h6:</strong><p class="text-dark">Estas utilidades de estilo se utilizan para establecer el tamaño de encabezado de un elemento. El número después de h indica el nivel de encabezado, por ejemplo, h1 es el encabezado de nivel superior, mientras que h6 es el encabezado de nivel inferior.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.lead:</strong><p class="text-dark">Esta utilidad de estilo se utiliza para establecer el tamaño de fuente y el margen inferior de un elemento de texto para destacarlo. Se utiliza comúnmente para introducciones y resúmenes de contenido.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.text-*:</strong><p class="text-dark">Esta utilidad de estilo se utiliza para establecer el color de texto de un elemento, como se mencionó anteriormente en las utilidades de estilo.</p>                        
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.font-weight-bold y .font-weight-normal:</strong><p class="text-dark">Estas utilidades de estilo se utilizan para establecer el peso de la fuente de un elemento. .font-weight-bold establece la fuente en negrita, mientras que .font-weight-normal establece la fuente en peso normal.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.text-center, .text-left y .text-right:</strong><p class="text-dark"> Estas utilidades de estilo se utilizan para alinear el texto de un elemento. .text-center centra el texto, .text-left alinea el texto a la izquierda y .text-right alinea el texto a la derecha.</p>
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.text-truncate:</strong><p class="text-dark"> Esta utilidad de estilo se utiliza para truncar el texto de un elemento y mostrar puntos suspensivos al final del texto si el contenido excede el ancho del elemento. Se utiliza comúnmente en elementos de navegación y tarjetas para asegurarse de que el contenido se ajuste correctamente en un espacio limitado.</p> 
+                    </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Comienzo el tercer acordeon-->
+        
+        <div class="accordion-item" id="acordeon3">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <h5 class="text-naranja">Componentes</h5>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>Bootstrap ofrece una variedad de componentes predefinidos para agregar funcionalidad a su sitio web.</strong> Algunos de los componentes a utilizar pueden ser:
+              <div class="lista">
+                <ol>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.navbar:</strong><p class="text-dark"> Esta clase se utiliza para crear una barra de navegación, que suele encontrarse en la parte superior de un sitio web. Puede contener enlaces, botones, menús desplegables y otros componentes de navegación.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.card:</strong><p class="text-dark"> La clase .card se utiliza para crear tarjetas o paneles que contienen información, como imágenes, texto y botones. Las tarjetas son útiles para presentar contenido en una página web de manera organizada y atractiva.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.carousel:</strong><p class="text-dark"> Esta clase se utiliza para crear carruseles de imágenes, que permiten mostrar varias imágenes en una misma sección de la página. Los carruseles se pueden utilizar para resaltar productos, mostrar imágenes de un evento o simplemente añadir interactividad a la página.</p>                        
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.modal:</strong><p class="text-dark"> Esta clase se utiliza para crear ventanas emergentes o modales que muestran información adicional o requieren la interacción del usuario. Los modales pueden contener texto, imágenes, formularios y otros componentes.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.dropdown:</strong><p class="text-dark"> La clase .dropdown se utiliza para crear menús desplegables que permiten al usuario acceder a opciones adicionales. Los menús desplegables pueden contener enlaces, botones, formularios y otros componentes.</p>
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.btn:</strong><p class="text-dark"> Esta clase se utiliza para crear botones, que se pueden utilizar para la interacción del usuario, como enviar un formulario, cerrar una ventana emergente, acceder a una sección de la página, etc. Bootstrap ofrece diferentes estilos de botones como .btn-primary, .btn-secondary, .btn-danger, entre otros.</p> 
+                    </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Comienzo el cuarto acordeon-->
+
+        <div class="accordion-item" id="acordeon4">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                <h5 class="text-naranja">Utilidades de estilo</h5>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <strong>Bootstrap también incluye una variedad de utilidades de estilo para ayudar a personalizar y ajustar los estilos de los componentes.</strong> Algunas de las utilidades de estilo más comunes son:
+              <div class="lista">
+                <ol>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.bg-*: </strong><p class="text-dark"> Esta utilidad de estilo se utiliza para establecer el color de fondo de un elemento. El * representa un nombre de color o un código hexadecimal de color. Por ejemplo, .bg-primary establece un fondo azul oscuro, mientras que .bg-danger establece un fondo rojo.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.text-*:</strong><p class="text-dark"> Esta utilidad de estilo se utiliza para establecer el color de texto de un elemento. El * representa un nombre de color o un código hexadecimal de color. Por ejemplo, .text-primary establece el color de texto azul oscuro, mientras que .text-danger establece el color de texto rojo.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.d-*:</strong><p class="text-dark"> Esta utilidad de estilo se utiliza para controlar la visualización de un elemento. El * representa una clase de visualización, como none para ocultar un elemento, block para mostrar un elemento como un bloque, inline para mostrar un elemento en línea, entre otros.</p>                        
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.m-* y .p-*:</strong><p class="text-dark"> Estas utilidades de estilo se utilizan para establecer la cantidad de margen y relleno de un elemento. El * representa un número que indica la cantidad de espacio, por ejemplo, .m-4 establece un margen de cuatro unidades y .p-2 establece un relleno de dos unidades.</p> 
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">.border-*:</strong><p class="text-dark"> Esta utilidad de estilo se utiliza para agregar un borde a un elemento. El * representa el tipo de borde, como solid, dashed, dotted, none, etc. Por ejemplo, .border-primary establece un borde sólido de color azul oscuro.</p>
+                    </li>
+                    <li class="m-3">
+                        <strong class="text-naranja-50">rounded-*:</strong><p class="text-dark"> Esta utilidad de estilo se utiliza para redondear las esquinas de un elemento. El * representa el radio de la esquina, por ejemplo, .rounded-3 establece un radio de esquina de tres unidades.</p> 
+                    </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Inicio footer-->
+
+    <footer class="bg-clean py-3" id="redes">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-between ">
+        <p>Descubre todas las clases de Bootstrap y cómo utilizarlas en tus proyectos</p>
+        <p>&copy; 2023 Bootstrap. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="mb-3">Síguenos</h5>
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="mb-3">Navegación</h5>
+        <ul class="list-unstyled">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="#acordeon1">Clases</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

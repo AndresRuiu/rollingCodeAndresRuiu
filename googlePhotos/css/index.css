@@ -61,8 +61,13 @@ button{
     cursor: pointer;
 }
 
-#boton2{
+#boton2 a{
+    text-decoration: none;
     color: white;
+}
+
+#boton2{
+    
     background-color: var(--color-azul);
     border: none;
     border-radius: 3px;

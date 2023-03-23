@@ -1,0 +1,6 @@
+.col-6{
+    background-color: rgba(250, 235, 215, 0.651);
+    border: 1px black solid;
+    height: 250px;
+    box-sizing: border-box;
+}
