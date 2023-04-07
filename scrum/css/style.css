@@ -1,0 +1,30 @@
+main{
+    background-color: #32435f;
+    padding-top: 15px;
+}
+
+.titulo{
+    background-color: #e1dcd9;
+    width: 65%;
+    justify-content: center;
+    border-radius: 5cm;
+    
+}
+h1{
+    text-align: center;
+}
+
+.carrusel{
+    border: 2px solid rgba(59, 57, 57, 0.637);
+}
+
+.carousel-item, img{
+    height: 50%;
+}
+
+.subtitulo{
+    width: 90%;
+    padding: 15px;
+    background-color: #e1dcd9;
+    border-radius: 1cm;
+}
