@@ -1,6 +1,7 @@
 main{
     background-color: #32435f;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .titulo{
@@ -15,7 +16,7 @@ h1{
 }
 
 .carrusel{
-    border: 2px solid rgba(59, 57, 57, 0.637);
+    border: 3px solid rgba(59, 57, 57, 0.637);
 }
 
 .carousel-item, img{
