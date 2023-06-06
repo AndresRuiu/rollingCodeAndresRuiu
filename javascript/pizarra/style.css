@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+}
+
+.container {
+    width: 70%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    border: rgb(255, 123, 0) solid 5px;
+    background-color: black;
+}
+
+.pixel {
+    width: 6px;
+    height: 6px;
+    flex-grow: 1;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    background-color: black;
+}
+
+.botones-colores {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    height: 50px;
+
+}
+
+.boton-colores {
+    margin-right: 10px;
+}

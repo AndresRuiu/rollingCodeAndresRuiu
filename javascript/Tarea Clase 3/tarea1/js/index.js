@@ -1,11 +1,13 @@
-let num1 = parseInt(prompt("Ingrese el primer número:"));
-let num2 = parseInt(prompt("Ingrese el segundo número:"));
-let num3 = parseInt(prompt("Ingrese el tercer número:"));
+//tarea 1 comienzo
 
-let maximo = Math.max(num1, num2, num3);
-let minimo = Math.min(num1, num2, num3);
+const num1 = parseInt(prompt("Ingrese el primer número:"));
+const num2 = parseInt(prompt("Ingrese el segundo número:"));
+const num3 = parseInt(prompt("Ingrese el tercer número:"));
 
-//let maximo, minimo;
+const maximo = Math.max(num1, num2, num3);
+const minimo = Math.min(num1, num2, num3);
+
+//const maximo, minimo;
 
 /*if (num1 > num2 && num1 > num3) {
     maximo = num1;
@@ -25,13 +27,13 @@ let minimo = Math.min(num1, num2, num3);
   }
 
 */
-let raiz = Math.sqrt(num2);
+const raiz = Math.sqrt(num2);
 
 console.log("El número mayor es: " + maximo);
 console.log("El número menor es: " + minimo);
 console.log("La raíz cuadrada del segundo número es: " + raiz);
 
-
+//tarea 1 fin
 
 function calcular() {
     let num1 = parseInt(document.getElementById("num1").value);
