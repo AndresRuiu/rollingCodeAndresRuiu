@@ -1,24 +1,10 @@
-const {Router} = require('express');
+const { Router } = require("express");
 const router = Router();
-
-router.get("/getUsers", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a getUsers"});
-});
-
-router.get("/getOneUsers/:id", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a getOneUsers"});
-});
-
-router.put("/updateUsers/:id", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a updateUsers"});
-});
-
-router.post("/createUsers/", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a createUsers"});
-});
-
-router.delete("/deleteUsers/:id", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a deleteUsers"});
-});
+const usersController = require('../controllers/usersController');
+router.get("/getUsers", usersController.index);
+router.get("/getOneUser/:id", usersController.getOne);
+router.put("/updateUser/:id", usersController.update);
+router.post("/createUser", usersController.create);
+router.delete("/deleteUser/:id", usersController.del);
 
 module.exports = router;

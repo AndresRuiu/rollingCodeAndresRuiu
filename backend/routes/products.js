@@ -1,24 +1,10 @@
-const {Router} = require('express');
+const { Router } = require("express");
 const router = Router();
-
-router.get("/getProducts", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a getProducts"});
-});
-
-router.get("/getOneProducts/:id", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a getOneProducts"});
-});
-
-router.put("/updateProducts/:id", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a updateProducts"});
-});
-
-router.post("/createProducts/", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a createProducts"});
-});
-
-router.delete("/deleteProducts/:id", (req, res)=> {
-    res.status(200).json({msg:"Realizaste una peticiona a deleteProducts"});
-});
+const productController = require('../controllers/productController')
+router.get("/getProducts", productController.index);
+router.get("/getOneProduct/:id", productController.getOne);
+router.put("/updateProduct/:id",productController.update);
+router.post("/createProduct",productController.create);
+router.delete("/deleteProduct/:id",productController.delete);
 
 module.exports = router;
